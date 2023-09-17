@@ -1736,7 +1736,15 @@ body {
   font-weight: 700;
   margin: 0;
 }
-body.active::before {
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper.active::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -1745,14 +1753,6 @@ body.active::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.401);
   z-index: 3;
-}
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .content {
