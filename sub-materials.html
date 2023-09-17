@@ -1,0 +1,592 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Подкаталог материалов</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <svg display="none">
+    <symbol id="watsup" viewBox="0 0 21 21">
+        <g>
+            <path d="M10.5 0C4.69875 0 0 4.69875 0 10.5C0 12.81 0.735 14.9363 1.995 16.6688L0.55125 20.475L4.725 19.2675C6.37875 20.37 8.37375 21 10.5 21C16.3013 21 21 16.3013 21
+                10.5C21 4.69875 16.3013 0 10.5 0ZM16.0913 14.8575L14.9625 15.96C13.7813 17.1413 10.6575 15.855 7.90125 13.0725C5.145 10.3163 3.91125 7.1925 5.01375 6.0375L6.1425
+                4.90875C6.5625 4.48875 7.27125 4.48875 7.7175 4.90875L9.37125 6.5625C9.94875 7.14 9.7125 8.1375 8.95125 8.37375C8.42625 8.5575 8.05875 9.135 8.2425 9.66C8.53125
+                10.8937 10.1325 12.4163 11.3137 12.705C11.8387 12.8363 12.4425 12.5213 12.6 11.9963C12.8363 11.235 13.8338 10.9988 14.4113 11.5763L16.065 13.23C16.485 13.6763
+                16.485 14.385 16.0913 14.8575Z">
+            </path>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="mail" viewBox="0 0 23 17">
+        <g>
+            <path d="M22.7974 1.2146L15.822 8.5L22.7974 15.7854C22.9235 15.5083 23 15.2021 23 14.875V2.125C23 1.79789 22.9235 1.49166 22.7974 1.2146Z"></path>
+            <path d="M20.9785 0H2.02148C1.71031 0 1.41899 0.0804196 1.15544 0.212972L10.0708 9.53761C10.8591 10.3663 12.1409 10.3663 12.9292 9.53761L21.8446 0.212972C21.581
+                0.0804196 21.2897 0 20.9785 0Z"></path>
+            <path d="M0.202598 1.2146C0.076502 1.49166 0 1.79789 0 2.125V14.875C0 15.2021 0.076502 15.5084 0.202598 15.7854L7.17802 8.5L0.202598 1.2146Z"></path>
+            <path d="M14.8691 9.50163L13.8821 10.5392C12.5686 11.92 10.4314 11.92 9.11788 10.5392L8.13086 9.50163L1.15544 16.787C1.41899 16.9196 1.71031 17 2.02148
+                17H20.9785C21.2897 17 21.581 16.9196 21.8446 16.787L14.8691 9.50163Z"></path>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="tg" viewBox="0 0 25 25">
+        <g>
+            <path d="M12.5 25C19.4052 25 25 19.4052 25 12.5C25 5.59479 19.4052 0 12.5 0C5.59479 0 0 5.59479 0 12.5C0 19.4052 5.59479 25 12.5 25ZM5.71979 12.2292L17.7719
+                7.58229C18.3313 7.38021
+                18.8198 7.71875 18.6385 8.56458L18.6396 8.56354L16.5875 18.2313C16.4354 18.9167 16.0281 19.0833 15.4583 18.7604L12.3333 16.4573L10.826 17.9094C10.6594 18.076
+                10.5188 18.2167
+                10.1958 18.2167L10.4177 15.0365L16.2094 9.80417C16.4615 9.58229 16.1531 9.45729 15.8208 9.67813L8.66354 14.1844L5.57813 13.2219C4.90833 13.0094 4.89375 12.5521
+                5.71979
+                12.2292Z"> </path>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="phone" viewBox="0 0 22 22">
+        <g>
+            <path d="M16.726 14.5534C16.0073 13.8438 15.11 13.8438 14.3958 14.5534C13.851 15.0936 13.3062 15.6338 12.7705 16.1832C12.624 16.3343 12.5004 16.3663 12.3219
+                16.2656C11.9694 16.0733 11.594 15.9177 11.2552 15.7071C9.67574 14.7137 8.35267 13.4364 7.18068 11.9989C6.59926 11.2847 6.08193 10.5202 5.72026 9.65956C5.64701
+                9.4856 5.66075 9.37115 5.80267 9.22923C6.34746 8.70276 6.87852 8.16256 7.41416 7.62235C8.16039 6.87156 8.16039 5.99259 7.40958 5.23722C6.98382 4.80689 6.55805
+                4.38571 6.13229 3.95538C5.69279 3.5159 5.25787 3.07183 4.8138 2.63692C4.09503 1.93649 3.19773 1.93649 2.48354 2.6415C1.93417 3.1817 1.40769 3.73564 0.849159
+                4.26669C0.331833 4.75653 0.0708811 5.35625 0.0159438 6.05668C-0.0710402 7.1966 0.208224 8.27243 0.601941 9.32079C1.40769 11.4908 2.63462 13.4181 4.1225
+                15.1852C6.13229 17.5749 8.53122 19.4656 11.3376 20.8299C12.6012 21.4433 13.9105 21.9148 15.3343 21.9927C16.314 22.0476 17.1655 21.8004 17.8477 21.0359C18.3146
+                20.514 18.8411 20.0379 19.3355 19.5389C20.068 18.7972 20.0726 17.8999 19.3447 17.1675C18.4749 16.2931 17.6004 15.4232 16.726 14.5534Z"></path>
+            <path d="M15.8516 10.9048L17.5409 10.6164C17.2754 9.06442 16.5429 7.65898 15.4304 6.54195C14.2538 5.3654 12.766 4.62377 11.127 4.39487L10.8889 6.0933C12.1571 6.27185
+                13.3108 6.84409 14.2218 7.75511C15.0825 8.61578 15.6456 9.70534 15.8516 10.9048Z"></path>
+            <path d="M18.4932 3.56168C16.5429 1.61145 14.0753 0.379973 11.3513 0L11.1133 1.69843C13.4664 2.02805 15.5998 3.09472 17.2846 4.77484C18.8823 6.37256 19.9307 8.39146
+                20.3107 10.6118L22 10.3234C21.5559 7.75054 20.3427 5.41576 18.4932 3.56168Z"></path>
+
+        </g>
+    </symbol>
+</svg>
+
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/svgicons/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__catalog header__dropmenu">
+                <p>Каталог</p>
+                <span></span>
+                <ul class="header__dropdowns">
+                    <li class="header__dropdown">
+                        <a href="#">Название сеции</a>
+                        <ul class="header__subdropdowns">
+                            <li class="header__subdropdown">
+                                <a href="#">Название сеции</a>
+                                <ul class="header__lastdropdowns">
+                                    <li class="header__lastdropdown">
+                                        <a href="#">Название сеции</a>
+                                    </li>
+                                    <li><a href="#">Название сеции</a></li>
+                                    <li><a href="#">Название сеции</a></li>
+                                    <li><a href="#">Название сеции</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Название сеции</a>
+                            </li>
+                            <li>
+                                <a href="#">Название сеции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__menu header__dropmenu">
+                <p>Меню</p>
+                <span></span>
+                <ul class="header__dropdowns">
+                    <li class="header__dropdown">
+                        <a href="#">Название сеции</a>
+                        <ul class="header__subdropdowns">
+                            <li class="header__subdropdown">
+                                <a href="#">Название сеции</a>
+                                <ul class="header__lastdropdowns">
+                                    <li class="header__lastdropdown">
+                                        <a href="#">Название сеции</a>
+                                    </li>
+                                    <li><a href="#">Название сеции</a></li>
+                                    <li><a href="#">Название сеции</a></li>
+                                    <li><a href="#">Название сеции</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Название сеции</a>
+                            </li>
+                            <li>
+                                <a href="#">Название сеции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                    <li>
+                        <a href="#">Название сеции</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="tel: +78005771000" class="header__phone">
+                <img src="img/svgicons/phone-white.svg" alt="phone">
+                +7 800 577 10 00
+            </a>
+            <div class="social">
+                <a href="#" class="social__item">
+
+                    <svg>
+                        <use xlink:href="#watsup"></use>
+                    </svg>
+                </a>
+                <a href="#" class="social__item">
+                    <svg>
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                </a>
+                <a href="#" class="social__item">
+                    <svg>
+                        <use xlink:href="#tg"></use>
+                    </svg>
+                </a>
+                <a href="#" class="social__item">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="content">
+                <article class="intro with-double-shadow">
+                    <img src="img/sub-materials/intro.png" alt="intro" class="intro__bg">
+                    <div class="container">
+                        <div class="headcrumbs">
+                            <a href="#">Главная</a>
+                            <img src="img/svgicons/left-arrow-yellow.svg" alt="">
+                            <a href="#">Каталог</a>
+                            <img src="img/svgicons/left-arrow-yellow.svg" alt="">
+                            <p>Нерудные материалы</p>
+                        </div>
+                        <div class="intro__row">
+                            <h1 class="intro__title">
+                                продажа
+                                <span>песка</span>
+                            </h1>
+                            <div class="intro__info">
+                                <p>
+                                    цена от
+                                    <span>300 ₽/м3</span>
+                                </p>
+                                <a href="#" class="btn">онлайн заявка</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="subpage-info">
+                    <div class="container">
+                        <div class="subpage-info__row">
+                            <div class="subpage-info__left">
+                                <h2>Карьерный песок</h2>
+                                <div class="page-text">
+                                    <p>
+                                        Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
+                                        производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
+                                        создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или
+                                        городской особняк
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="subpage-info__right">
+                                <div class="subpage-info__card">
+                                    <div class="subpage-info__img">
+                                        <img src="img/svgicons/download.svg" alt="download">
+                                    </div>
+                                    <p>
+                                        <b>Скачать</b>
+                                        договор поставки
+                                    </p>
+                                </div>
+                                <div class="subpage-info__card">
+                                    <div class="subpage-info__img">
+                                        <img src="img/svgicons/pdf.svg" alt="download">
+                                    </div>
+                                    <p>
+                                        <b>Скачать</b>
+                                        прайс-лист
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="sand">
+                    <div class="container">
+                        <div class="page-title">
+                            <h2>Песок</h2>
+                        </div>
+                        <div class="sand__row">
+                            <div class="sand__item">
+                                <img src="img/sand.png" alt="">
+                                <h2>Песок строительный</h2>
+                                <p>Минимальный объем заявки 10м³</p>
+                                <span>от 300 ₽/м3</span>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                            <div class="sand__item">
+                                <img src="img/sand.png" alt="">
+                                <h2>Песок строительный</h2>
+                                <p>Минимальный объем заявки 10м³</p>
+                                <span>от 300 ₽/м3</span>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                            <div class="sand__item">
+                                <img src="img/sand.png" alt="">
+                                <h2>Песок строительный</h2>
+                                <p>Минимальный объем заявки 10м³</p>
+                                <span>от 300 ₽/м3</span>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                            <div class="sand__item">
+                                <img src="img/sand.png" alt="">
+                                <h2>Песок строительный</h2>
+                                <p>Минимальный объем заявки 10м³</p>
+                                <span>от 300 ₽/м3</span>
+                                <a href="#" class="btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page-cards">
+                    <div class="container">
+                        <div class="page-title">
+                            <h2>Преимущества</h2>
+                        </div>
+                        <div class="page-cards__row">
+                            <div class="page-cards__card">
+                                <div class="page-cards__img">
+                                    <img src="img/svgicons/cube.svg" alt="">
+                                </div>
+                                <p>
+                                    Доставка
+                                    от 10 кубов
+                                </p>
+                            </div>
+                            <div class="page-cards__card">
+                                <div class="page-cards__img">
+                                    <img src="img/svgicons/individual.svg" alt="">
+                                </div>
+                                <p>Индивидуальный подход</p>
+                            </div>
+                            <div class="page-cards__card">
+                                <div class="page-cards__img">
+                                    <img src="img/svgicons/work.svg" alt="">
+                                </div>
+                                <p>
+                                    Поддержка
+                                    24/7
+                                </p>
+                            </div>
+                            <div class="page-cards__card">
+                                <div class="page-cards__img">
+                                    <img src="img/svgicons/rocket.svg" alt="">
+                                </div>
+                                <p>Доступные цены опта и розницы</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="price">
+                    <div class="container">
+                        <div class="price__row">
+                            <div class="price__table">
+                                <table class="price">
+                                    <tbody>
+                                        <tr>
+                                            <th>Песок</th>
+                                            <th>Цена за м3</th>
+                                            <th>Цена за м3</th>
+                                            <th>Количество</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Песок намывной</td>
+                                            <td>340 руб. за м3</td>
+                                            <td>340 руб. за м3</td>
+                                            <td class="flex">
+                                                <div class="button">
+                                                    <button>-</button>
+                                                    <input type="text">
+                                                    <button>+</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="price__cart">
+                                <div class="price__total">
+                                    <p>
+                                        Товаров в корзине:
+                                        <span id="count">0</span>
+                                    </p>
+                                    <p>
+                                        На сумму:
+                                        <span id="sum">0</span>
+                                        руб.
+                                    </p>
+                                </div>
+                                <div class="price__btn">
+                                    <span>Рассчитать</span>
+                                    стоимость доставки
+                                </div>
+                                <div class="price__phone">
+                                    <p>Или позвоните по номеру</p>
+                                    <a href="tel:+7 (812) 336-43-77">+7 (812) 336-43-77</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="reasons">
+                    <div class="container">
+                        <div class="page-title">
+                            <h2>причины заказать доставку песка в Базнеруде</h2>
+                        </div>
+                        <div class="reasons__row">
+                            <div class="reasons__item">
+                                <img src="img/svgicons/note.svg" alt="">
+                                <p>
+                                    Позвоните
+                                    <br>
+                                    или отправьте заявку
+                                </p>
+                            </div>
+                            <div class="reasons__step">
+                                <img src="img/svgicons/slider-left.svg" alt="">
+                            </div>
+                            <div class="reasons__item">
+                                <img src="img/svgicons/wallet.svg" alt="">
+                                <p>
+                                    Согласование стоимости
+                                    <br>
+                                    перевозки
+                                </p>
+                            </div>
+                            <div class="reasons__step">
+                                <img src="img/svgicons/slider-left.svg" alt="">
+                            </div>
+                            <div class="reasons__item">
+                                <img src="img/svgicons/offer.svg" alt="">
+                                <p>
+                                    Заключение
+                                    <br>
+                                    договора
+                                </p>
+                            </div>
+                            <div class="reasons__step down">
+                                <img src="img/svgicons/slider-left.svg" alt="">
+                            </div>
+                            <div class="reasons__item">
+                                <img src="img/svgicons/mobile.svg" alt="">
+                                <p>
+                                    Оплата удобным
+                                    <br>
+                                    способом
+                                </p>
+                            </div>
+                            <div class="reasons__step">
+                                <img src="img/svgicons/slider-right.svg" alt="">
+                            </div>
+                            <div class="reasons__item">
+                                <img src="img/svgicons/SMGS.svg" alt="">
+                                <p>
+                                    Предоставление
+                                    <br>
+                                    СМГС накладной
+                                </p>
+                            </div>
+                            <div class="reasons__step">
+                                <img src="img/svgicons/slider-right.svg" alt="">
+                            </div>
+                            <div class="reasons__item">
+                                <img src="img/svgicons/bux.svg" alt="">
+                                <p>
+                                    Формирование бухгалтерских
+                                    <br>
+                                    документов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__items footer-left">
+                <div class="footer__item no-padding text">
+                    <div class="footer__logo">
+                        <img src="img/svgicons/logo.svg" alt="logo">
+                    </div>
+                    <p>Юридическое название: ООО “КТТ ДИЗАЙН”, УНП 193446392</p>
+                    <p>Юридический адрес: 220092, РБ, МИНСКИЙ РАЙОН, Г. МИНСК, УЛ. УЛ.БЕРУТА, Д. 11А ОФ. 270.</p>
+                    <p>Для почтовых отправлений: 220030, РБ, Г.МИНСК, УЛ.КОМСОМОЛЬСКАЯ, 5А, КАБ.28.,</p>
+                    <a href="#" class="kruw">
+                        <img src="img/svgicons/kruw.svg" alt="">
+                        <p>Разработка</p>
+                    </a>
+                </div>
+                <div class="footer__item info">
+                    <div class="footer__title">Пункт самовывоза</div>
+                    <ul>
+                        <li><img src="img/svgicons/geo.svg" alt="">г. Санкт-Петербург, ул.Комсомольская, 5А, 2 этаж</li>
+                        <li><img src="img/svgicons/phone-yellow.svg" alt="">+375 (44) 577-1000</li>
+                        <li><img src="img/svgicons/time.svg" alt="">Понедельник – Пятница: с 10:00 до 20:00</li>
+                        <li><img src="img/svgicons/time.svg" alt="">Суббота - Воскресенье: выходной</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__items footer-right">
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Материалы
+                    </div>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Рассрочка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Правила обмена</a></li>
+                            <li><a href="#">Возврата товара</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">
+                        Услуги
+                    </div>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Рассрочка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Правила обмена</a></li>
+                            <li><a href="#">Возврата товара</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">
+                        информация
+                    </div>
+                    <nav>
+                        <ul class="footer__list">
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Рассрочка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Правила обмена</a></li>
+                            <li><a href="#">Возврата товара</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/cdd40c5823.js" crossorigin="anonymous"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
