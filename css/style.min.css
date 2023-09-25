@@ -802,6 +802,11 @@ input:focus {
   align-items: center;
   justify-content: space-between;
 }
+.intro__row.without-flex {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .intro__row p {
   color: #fff;
   font-size: 33px;
@@ -964,6 +969,12 @@ input:focus {
   padding: 20px;
   border: 1px solid #ded9d9;
   box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+  color: #323338;
+  transition: all 100ms ease;
+}
+.subpage-info__card:hover {
+  border-color: #f3c538;
+  box-shadow: 0px 4px 22px 0px hsla(45, 99%, 59%, 0.5);
 }
 .subpage-info__card:not(:last-child) {
   margin: 0px 0px 16px;
@@ -1085,6 +1096,9 @@ table.price td:nth-child(3) {
   display: block;
   font-size: 22px;
 }
+.price__btn:hover {
+  background: #ffd862;
+}
 .price__phone p {
   color: #fff;
   text-align: center;
@@ -1166,6 +1180,281 @@ table.price td:nth-child(3) {
 }
 .reasons__step.down {
   transform: rotate(90deg);
+}
+
+.phone__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(222, 217, 217, 0.2);
+  box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+  padding: 20px;
+  gap: 32px;
+}
+.phone__phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #323338;
+  color: #323338;
+  font-size: 55px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.photogallery__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 21px;
+}
+.photogallery__item {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+}
+.photogallery__item img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.delivery__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 21px;
+}
+.delivery__item {
+  padding: 50px 35px 39px;
+  border: 1px solid #ded9d9;
+  background: #fff;
+  box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+}
+.delivery p {
+  color: #22262d;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142%; /* 25.56px */
+}
+.delivery p.delivery__title {
+  text-align: center;
+  margin: 0px 0px 32px;
+  color: #353e41;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.delivery p.delivery__title span {
+  display: block;
+  margin: 8px 0px 0px;
+  font-size: 24px;
+}
+.delivery__img {
+  position: relative;
+  overflow: hidden;
+  width: 184px;
+  height: 115px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.delivery__img img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviews__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 21px;
+}
+.reviews__item {
+  display: flex;
+  gap: 32px;
+  padding: 32px 24px;
+  border: 1px solid #ded9d9;
+  background: #fff;
+  box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+}
+.reviews__img {
+  position: relative;
+  width: 81px;
+  height: 81px;
+  overflow: hidden;
+  border-radius: 50%;
+  flex: 0 0 81px;
+}
+.reviews__img img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews__header {
+  color: #211a14;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0px 0px 12px;
+}
+.reviews p {
+  color: #22262d;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%; /* 21.3px */
+  margin: 0px 0px 12px;
+}
+.reviews__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reviews__stars {
+  display: flex;
+  gap: 10px;
+  color: #f3c538;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.reviews__name, .reviews__time {
+  color: #685847;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 18.2px */
+}
+.reviews__time {
+  font-weight: 500;
+}
+
+.faq__row {
+  display: flex;
+  gap: 72px;
+  padding: 0px 0px 30px;
+}
+.faq__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 600px;
+}
+.faq__img img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+.faq__items {
+  flex: 1 1 auto;
+}
+.faq__item {
+  margin: 0px 0px 8px;
+}
+.faq__question {
+  background: #fecb2f;
+  filter: drop-shadow(0px 4px 22px rgba(211, 211, 211, 0.08));
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 18px */
+  text-transform: uppercase;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  width: 100%;
+}
+.faq__question::after {
+  content: "+";
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  top: 50%;
+  right: 22px;
+  transform: translate(0%, -50%);
+  transition: all 300ms ease;
+  font-weight: 300;
+}
+.faq__question.active {
+  background: #262b34;
+}
+.faq__question.active::after {
+  content: "-";
+}
+.faq__asnwer {
+  padding: 22px 0px;
+  color: #22262d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%; /* 25.56px */
+  display: none;
+}
+
+.usage__row {
+  counter-reset: usageCounter 0;
+}
+.usage__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 40px 40px 131px;
+  border: 1px solid #ded9d9;
+  background: #fff;
+  box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+  position: relative;
+}
+.usage__item:not(:last-child) {
+  margin: 0px 0px 16px;
+}
+.usage__item::before {
+  content: counter(usageCounter);
+  counter-increment: usageCounter 1;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  color: #f3c538;
+  font-size: 77px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.usage p {
+  font-weight: 500;
+  line-height: 142%;
+}
+.usage .usage__title {
+  color: #353e41;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0px 0px 8px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  border-radius: 9px;
+  background: #312424;
+  color: #fff;
+  width: 32px;
+  height: 32px;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  font-size: 10px;
 }
 
 .intro-main {

@@ -6,9 +6,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="js/app.min.js"></script>
     <title>Каталог материалов</title>
 </head>
+
     <body>
         <div class="wrapper">
             <svg display="none">
@@ -203,7 +207,8 @@
                             <h2>Поставка материалов</h2>
                         </div>
                         <div class="page-text">
-                            <p>Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
+                            <p>
+                                Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
                                 производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
                                 создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или
                                 городской особняк
@@ -212,82 +217,105 @@
                         <article class="sand">
                             <header class="sand__header">
                                 <h3>ПЕСок</h3>
-                                <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. </p>
+                                <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК.</p>
                                 <a href="#" class="btn">Перейти в раздел</a>
                             </header>
-                            <div class="sand__row">
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
+                            <div class="sand__row sand__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
                                 </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
+                                <div class="swiper-button-prev sand__slider-prev"></div>
+                                <div class="swiper-button-next sand__slider-next"></div>
                             </div>
                         </article>
                         <article class="sand">
                             <header class="sand__header">
                                 <h3>щебень</h3>
-                                <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. </p>
+                                <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК.</p>
                                 <a href="#" class="btn">Перейти в раздел</a>
                             </header>
-                            <div class="sand__row">
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
+                            <div class="sand__row sand__slider__second swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                    <div class="sand__item swiper-slide">
+                                        <img src="img/sand.png" alt="">
+                                        <h2>Песок строительный</h2>
+                                        <p>Минимальный объем заявки 10м³</p>
+                                        <span>от 300 ₽/м3</span>
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
                                 </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
-                                <div class="sand__item">
-                                    <img src="img/sand.png" alt="">
-                                    <h2>Песок строительный</h2>
-                                    <p>Минимальный объем заявки 10м³</p>
-                                    <span>от 300 ₽/м3</span>
-                                    <a href="#" class="btn">Подробнее</a>
-                                </div>
+                                <div class="swiper-button-prev sand__slider__second-prev"></div>
+                                <div class="swiper-button-next sand__slider__second-next"></div>
                             </div>
                         </article>
                         <div class="page-title">
                             <h2>СЕО ТЕКСТ</h2>
                         </div>
                         <div class="page-text">
-                            <p>Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
+                            <p>
+                                Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
                                 производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
                                 создать специальные чертежи или воспользуемся уже готовым вариантом
                             </p>
@@ -298,8 +326,10 @@
                                     <div class="page-cards__img">
                                         <img src="img/svgicons/cube.svg" alt="">
                                     </div>
-                                    <p>Доставка
-                                        от 10 кубов</p>
+                                    <p>
+                                        Доставка
+                                        от 10 кубов
+                                    </p>
                                 </div>
                                 <div class="page-cards__card">
                                     <div class="page-cards__img">
@@ -311,8 +341,10 @@
                                     <div class="page-cards__img">
                                         <img src="img/svgicons/work.svg" alt="">
                                     </div>
-                                    <p>Поддержка
-                                        24/7</p>
+                                    <p>
+                                        Поддержка
+                                        24/7
+                                    </p>
                                 </div>
                                 <div class="page-cards__card">
                                     <div class="page-cards__img">
@@ -323,7 +355,8 @@
                             </div>
                         </article>
                         <div class="page-text">
-                            <p>Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
+                            <p>
+                                Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
                                 производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
                                 создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или
                                 городской особняк Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым
@@ -346,8 +379,10 @@
                                     <img src="img/excovator.png" alt="">
                                 </div>
                                 <form action="#" class="form__form">
-                                    <div class="form__title">РАсчитать стоимость
-                                        доставки песка</div>
+                                    <div class="form__title">
+                                        РАсчитать стоимость
+                                        доставки песка
+                                    </div>
                                     <div class="form__subtitle">
                                         Задайте их нашему специалисту и получите ответ в течение 15 минут!
                                     </div>
@@ -358,8 +393,10 @@
                                         <button class="form__btn">Задать вопрос</button>
                                         <label class="checkbox">
                                             <input type="checkbox" class="custom-checkbox">
-                                            <p>Обработки
-                                                персональных данных</p>
+                                            <p>
+                                                Обработки
+                                                персональных данных
+                                            </p>
                                         </label>
                                     </footer>
                                 </form>
@@ -453,5 +490,4 @@
         <script src="js/slick.min.js"></script>
         <script src="js/app.min.js"></script>
     </body>
-
 </html>
