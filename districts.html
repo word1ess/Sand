@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="js/app.min.js"></script>
-    <title>Аренда техники</title>
+    <title>Районы</title>
 </head>
 
     <body>
@@ -282,130 +282,21 @@
 </header>
 
             <main class="content">
-                <article class="intro with-double-shadow">
-                    <img src="img/rent/intro.png" alt="intro" class="intro__bg">
+                <div class="headcrumbs only">
                     <div class="container">
-                        <div class="headcrumbs">
+                        <div class="headcrumbs__row">
                             <a href="#">Главная</a>
                             <img src="img/svgicons/left-arrow-yellow.svg" alt="">
                             <a href="#">Каталог</a>
                             <img src="img/svgicons/left-arrow-yellow.svg" alt="">
                             <p>Нерудные материалы</p>
                         </div>
-                        <div class="intro__row">
-                            <h1 class="intro__title">
-                                Аренда
-                                <span>техники</span>
-                            </h1>
-                            <div class="intro__info">
-                                <a href="#" class="btn">онлайн заявка</a>
-                            </div>
-                        </div>
                     </div>
-                </article>
-                <section class="catalog-services">
-                    <div class="container">
-                        <div class="page-title">
-                            <h2>подкаталог услуг</h2>
-                        </div>
-                        <div class="catalog-services__row">
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Бульдозеры
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дорожные
-                                    фрезы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Манипуляторы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дородные
-                                    картки
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Бульдозеры
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дорожные
-                                    фрезы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Манипуляторы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дородные
-                                    картки
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Бульдозеры
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дорожные
-                                    фрезы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Манипуляторы
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                            <div class="catalog-services__item">
-                                <img src="img/svgicons/belaz.svg" alt="">
-                                <p class="catalog-services__title">
-                                    Дородные
-                                    картки
-                                </p>
-                                <p class="catalog-services__price">от 300 ₽/м3</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
                 <section class="section">
                     <div class="container">
                         <div class="page-title">
-                            <h2>ТЕкстовый блок</h2>
+                            <h2>Доставка песка</h2>
                         </div>
                         <div class="page-text">
                             <p>
@@ -414,117 +305,152 @@
                         </div>
                     </div>
                 </section>
-                <article class="page-cards">
+                <section class="districts">
+                    <div class="container">
+                        <div class="page-title flex">
+                            <h2>Районы доставки песка</h2>
+                            <div class="districts__current" data-currDistrict="North">
+                                <header class="districts__header">
+                                    <p class="districts__currDistrict">Северный район</p>
+                                </header>
+                                <main class="districts__body">
+                                    <ul>
+                                        <li class="selector-for-district" data-select-districts="North">Северный район</li>
+                                        <li class="selector-for-district" data-select-districts="South">Южный район</li>
+                                    </ul>
+                                </main>
+                            </div>
+                        </div>
+                        <div class="districts__tabs">
+                            <div data-currDistrictTab="North" class="districts__tab">
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Север пригорода и области
+                                </div>
+                            </div>
+                            <div data-currDistrictTab="South" class="districts__tab">
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                                <div class="districts__district">
+                                    Юг пригорода и области
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <article class="delivery">
                     <div class="container">
                         <div class="page-title">
-                            <h2>ПРЕИУЩЕСТВА БЕЗНЕРУД</h2>
+                            <h2>Доставка песка</h2>
                         </div>
-                        <div class="page-cards__row five">
-                            <div class="page-cards__card">
-                                <div class="page-cards__img">
-                                    <img src="img/svgicons/autopark.svg" alt="">
+                        <div class="delivery__row delivery__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="delivery__item swiper-slide">
+                                    <p class="delivery__title">
+                                        вид самосвалов
+                                        <span>20 кубов</span>
+                                    </p>
+                                    <div class="delivery__img">
+                                        <img src="img/delivery/1.png" alt="">
+                                    </div>
+                                    <p>Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или</p>
                                 </div>
-                                <p>
-                                    СВОЙ ПАРК СПЕЦТЕХНИКИ
-                                </p>
-                            </div>
-                            <div class="page-cards__card">
-                                <div class="page-cards__img">
-                                    <img src="img/svgicons/work-2.svg" alt="">
+                                <div class="delivery__item swiper-slide">
+                                    <p class="delivery__title">
+                                        вид самосвалов
+                                        <span>20 кубов</span>
+                                    </p>
+                                    <div class="delivery__img">
+                                        <img src="img/delivery/1.png" alt="">
+                                    </div>
+                                    <p>Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или</p>
                                 </div>
-                                <p>
-                                    ОПЫТ БОЛЕЕ
-                                    10 ЛЕТ
-                                </p>
-                            </div>
-                            <div class="page-cards__card">
-                                <div class="page-cards__img">
-                                    <img src="img/svgicons/download.svg" alt="">
+                                <div class="delivery__item swiper-slide">
+                                    <p class="delivery__title">
+                                        вид самосвалов
+                                        <span>20 кубов</span>
+                                    </p>
+                                    <div class="delivery__img">
+                                        <img src="img/delivery/1.png" alt="">
+                                    </div>
+                                    <p>Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или</p>
                                 </div>
-                                <p>
-                                    РЕАЛЬНЫЕ
-                                    ЦЕНЫ
-                                </p>
-                            </div>
-                            <div class="page-cards__card">
-                                <div class="page-cards__img">
-                                    <img src="img/svgicons/security.svg" alt="">
+                                <div class="delivery__item swiper-slide">
+                                    <p class="delivery__title">
+                                        вид самосвалов
+                                        <span>20 кубов</span>
+                                    </p>
+                                    <div class="delivery__img">
+                                        <img src="img/delivery/1.png" alt="">
+                                    </div>
+                                    <p>Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или</p>
                                 </div>
-                                <p>
-                                    Высокое
-                                    КАЧЕСТВО
-                                </p>
-                            </div>
-                            <div class="page-cards__card">
-                                <div class="page-cards__img">
-                                    <img src="img/svgicons/always.svg" alt="">
+                                <div class="delivery__item swiper-slide">
+                                    <p class="delivery__title">
+                                        вид самосвалов
+                                        <span>20 кубов</span>
+                                    </p>
+                                    <div class="delivery__img">
+                                        <img src="img/delivery/1.png" alt="">
+                                    </div>
+                                    <p>Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или</p>
                                 </div>
-                                <p>
-                                    Всегда
-                                    в срок
-                                </p>
                             </div>
+                            <div class="swiper-button-prev delivery__slider-prev"></div>
+                            <div class="swiper-button-next delivery__slider-next"></div>
                         </div>
                     </div>
                 </article>
                 <section class="section">
                     <div class="container">
                         <div class="page-title">
-                            <h2>СЕО ТЕКСТ</h2>
+                            <h2>Ceo текст</h2>
                         </div>
                         <div class="page-text">
                             <p>
-                                Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
-                                производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
-                                создать специальные чертежи или воспользуемся уже готовым вариантом
-                            </p>
-                        </div>
-                        <article class="page-cards">
-                            <div class="page-cards__row">
-                                <div class="page-cards__card">
-                                    <div class="page-cards__img">
-                                        <img src="img/svgicons/cube.svg" alt="">
-                                    </div>
-                                    <p>
-                                        Доставка
-                                        от 10 кубов
-                                    </p>
-                                </div>
-                                <div class="page-cards__card">
-                                    <div class="page-cards__img">
-                                        <img src="img/svgicons/individual.svg" alt="">
-                                    </div>
-                                    <p>Индивидуальный подход</p>
-                                </div>
-                                <div class="page-cards__card">
-                                    <div class="page-cards__img">
-                                        <img src="img/svgicons/work.svg" alt="">
-                                    </div>
-                                    <p>
-                                        Поддержка
-                                        24/7
-                                    </p>
-                                </div>
-                                <div class="page-cards__card">
-                                    <div class="page-cards__img">
-                                        <img src="img/svgicons/rocket.svg" alt="">
-                                    </div>
-                                    <p>Доступные цены опта и розницы</p>
-                                </div>
-                            </div>
-                        </article>
-                        <div class="page-text">
-                            <p>
-                                Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского
-                                производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам
-                                создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или
-                                городской особняк Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым
-                                вариантом для заводского производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу
-                                ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа
-                                загородный дом или городской особняк Производство нестандартной также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся
-                                уже готовым вариантом для заводского производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров
-                                также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего
-                                индивидуального заказа загородный дом или городской особняк
+                                Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам создать специальные  чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или городской особняк Производство нестандартной  также под силу ПК МСК. Мы поможем вам создать специальные чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа. Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам создать специальные  чертежи или воспользуемся уже готовым вариантом для заводского производства вашего индивидуального заказа загородный дом или городской особняк
                             </p>
                         </div>
                     </div>
@@ -560,6 +486,61 @@
                                     </label>
                                 </footer>
                             </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="reviews">
+                    <div class="container">
+                        <div class="page-title">
+                            <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
+                        </div>
+                        <div class="reviews__row reviews__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__img">
+                                        <img src="img/svgicons/user.svg" alt="user">
+                                    </div>
+                                    <div class="reviews__info">
+                                        <header class="reviews__header">Компания OOO ”БЕтонмаш”</header>
+                                        <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам создать специальные  чертежи или воспользуемся</p>
+                                        <footer class="reviews__footer">
+                                            <div class="reviews__stars">★ ★ ★ ★ ★</div>
+                                            <div class="reviews__name">Игорь</div>
+                                            <time data-time="2022-06-02" class="reviews__time">02.06.2022</time>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__img">
+                                        <img src="img/svgicons/user.svg" alt="user">
+                                    </div>
+                                    <div class="reviews__info">
+                                        <header class="reviews__header">Компания OOO ”БЕтонмаш”</header>
+                                        <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам создать специальные  чертежи или воспользуемся</p>
+                                        <footer class="reviews__footer">
+                                            <div class="reviews__stars">★★★★★</div>
+                                            <div class="reviews__name">Игорь</div>
+                                            <time data-time="2022-06-02" class="reviews__name">02.06.2022</time>
+                                        </footer>
+                                    </div>
+                                </div>
+                                <div class="reviews__item swiper-slide">
+                                    <div class="reviews__img">
+                                        <img src="img/svgicons/user.svg" alt="user">
+                                    </div>
+                                    <div class="reviews__info">
+                                        <header class="reviews__header">Компания OOO ”БЕтонмаш”</header>
+                                        <p>Производство нестандартной продукции жби особых форм и размеров также под силу ПК МСК. Мы поможем вам создать специальные  чертежи или воспользуемся</p>
+                                        <footer class="reviews__footer">
+                                            <div class="reviews__stars">★★★★★</div>
+                                            <div class="reviews__name">Игорь</div>
+                                            <time data-time="2022-06-02" class="reviews__name">02.06.2022</time>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev reviews__slider-prev"></div>
+                            <div class="swiper-button-next reviews__slider-next"></div>
                         </div>
                     </div>
                 </article>
