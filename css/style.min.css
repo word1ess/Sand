@@ -1919,6 +1919,10 @@ table.vehicle__table tr, table.vehicle__table {
   display: flex;
   gap: 24px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+}
+.other-objects__object:hover {
+  border-color: #f4b434;
 }
 .other-objects__img {
   flex: 0 0 332px;
@@ -2475,6 +2479,10 @@ table.vehicle__table tr, table.vehicle__table {
   border: 1px solid #ded9d9;
   background: #fff;
   box-shadow: 0px 4px 22px 0px rgba(211, 211, 211, 0.08);
+  transition: all 300ms ease;
+}
+.catalog-services__item:hover {
+  border-color: #f4b434;
 }
 .catalog-services__title {
   margin: 0px 0px 22px;
@@ -2819,6 +2827,11 @@ table.vehicle__table tr, table.vehicle__table {
 .rent-tabs__tab {
   display: none;
   animation: fadeIn 300ms ease;
+  color: #22262d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142%; /* 25.56px */
 }
 .rent-tabs__tab.active {
   display: block;
@@ -3345,6 +3358,19 @@ body {
     flex: none;
     aspect-ratio: 1/1;
   }
+  .rent-descriptions__row {
+    flex-wrap: wrap-reverse;
+  }
+  .rent-vehicle__row {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .rent-vehicle__img {
+    flex: 0 0 300px;
+  }
+  .rent-tabs {
+    flex: 1 1 auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .form__footer {
@@ -3430,8 +3456,18 @@ body {
     flex-direction: column;
     margin: 0px 0px 24px;
   }
+  .rent-tabs__links {
+    flex-wrap: wrap;
+  }
+  .rent-tabs__link {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 430px) {
+  .rent-params__param {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .header__logo {
     margin: 0px 20px 0px 0px;
   }
